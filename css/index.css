@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+body {
+  background-color: #222838;
+}
+.box {
+  display: flex;
+  margin: 0 auto;
+  width: 1800px;
+  height: 982px;
+  background-color: #222838;
+}
+.slideColor {
+  background-image: linear-gradient(to right, rgba(0, 185, 167, 0), #90F7EC, rgba(0, 185, 167, 0));
+}
+.slideColorColor {
+  background-image: linear-gradient(to right, rgba(0, 185, 167, 0), #90F7EC, rgba(0, 185, 167, 0));
+}
+.slidebar {
+  width: 333px;
+  height: 100%;
+  padding: 0 40px;
+}
+.slidebar .login {
+  display: flex;
+  margin-top: 23px;
+  height: 80px;
+  color: aliceblue;
+}
+.slidebar .login .headerImg {
+  width: 80px;
+  height: 80px;
+  background-color: aquamarine;
+  border-radius: 50%;
+  background: url(../images/头像.jpg) no-repeat;
+  background-size: 80px 80px;
+  overflow: hidden;
+}
+.slidebar .login .tip {
+  margin-left: 20px;
+  padding-top: 10px;
+}
+.slidebar .login .tip h3 {
+  position: relative;
+}
+.slidebar .login .tip h3::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 50px;
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid white;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.slidebar .slide {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: aliceblue;
+  border-right: 1px solid rgba(247, 247, 247, 0.548);
+}
+.slidebar .slide li {
+  height: 50px;
+  line-height: 50px;
+}
+.main {
+  flex: 1;
+  margin-left: 44px;
+  color: white;
+}
+.main .main-header {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 23px;
+  height: 175px;
+  font-size: 16px;
+  color: aliceblue;
+}
+.main .main-header .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-size: 500%;
+  margin-right: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+  border-radius: 10px;
+  animation: run 3s linear infinite;
+}
+.main .main-header .item h3 {
+  margin: 30px 0;
+  font-size: 18px;
+}
+.main .main-header .item h3 strong {
+  font-size: 26px;
+}
+.main .main-header .item:nth-child(1) {
+  background: linear-gradient(to right, #51caca, #16ecd7);
+}
+.main .main-header .item:nth-child(2) {
+  background-image: linear-gradient(to right, #0052D4, #167caf);
+}
+.main .main-header .item:nth-child(3) {
+  background-image: linear-gradient(to right, #c96193, #da452b);
+}
+.main .main-header .item:nth-child(4) {
+  background-image: linear-gradient(to right, #0575e6, #021b79);
+}
+.main .main-header .item:nth-child(5) {
+  background-image: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+.main .main-body {
+  display: flex;
+  margin-top: 34px;
+  width: 1367px;
+  height: 720px;
+}
+.main .main-body .left {
+  width: 440px;
+  text-align: center;
+}
+.main .main-body .left .left-header {
+  height: 50px;
+  padding: 30px 0;
+}
+.main .main-body .left .left-header h3 {
+  position: relative;
+}
+.main .main-body .left .left-header h3::after {
+  content: '';
+  position: absolute;
+  top: 7px;
+  right: 162px;
+  width: 0px;
+  height: 0px;
+  border-top: 6px solid white;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+}
+.main .main-body .left .left-header h2 {
+  color: #0cdac1;
+  font-size: 28px;
+}
+.main .main-body .left .pie {
+  width: 100%;
+  height: 608px;
+}
+.main .main-body .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 33px;
+}
+.main .main-body .right .right-top {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  height: 455px;
+  background-color: #4ca1af;
+}
+.main .main-body .right .right-top .fold {
+  flex: 1;
+}
+.main .main-body .right .right-bottom {
+  display: flex;
+  margin-top: 30px;
+  width: 900px;
+  height: 238px;
+}
+.main .main-body .right .right-bottom .itemm {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.main .main-body .right .right-bottom .itemm .column {
+  flex: 1;
+}
+.main .main-body .right .right-bottom .itemm .right-fold {
+  flex: 1;
+}
+.top-tip {
+  position: relative;
+  padding-left: 20px;
+  padding-top: 20px;
+  height: 30px;
+  line-height: 30px;
+}
+.top-tip select {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 120px;
+  height: 25px;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 18px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+.top-tip select option {
+  background-color: black;
+}
+@keyframes run {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
